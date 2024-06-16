@@ -6,7 +6,7 @@ module.exports = {
         res.set({
             "Allow-access-Allow-Origin": '*'
         });
-        return res.redirect('index.html');
+        return res.redirect('reciver.html');
     },
     Reciver: (req, res) => {
         var name = req.body.name;
@@ -32,6 +32,6 @@ module.exports = {
             console.log("Record Inserted Successfully");
         });
 
-        return res.redirect('signup_successfull.html');
+        return res.redirect('index.html');
     }
 };
