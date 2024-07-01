@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cargo System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+
+
+
+
+
+    <!-- ///////////////////////navbar/////////////// -->
+
+
+
+    <header class="p-3 bg-dark text-white ">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="../images/c1.jpg" class="bi me-2 logo" width="40" height="32" role="img" alt="logo">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Register</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Login</a></li>
+
+                </ul>
+
+
+                <div class="text-end">
+                    <a href="./login.html">
+                        <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    </a>
+                    <a href="./register.html">
+
+                        <button type="button" class="btn btn-danger">Sign-up</button>
+                    </a>
+
+                </div>
+            </div>
+
+    </header>
+
+
+          <!-- Reciver//////////////// -->
+          <div class="row">
+            <div class="col-sm-6 offset-3">
+                <div class="card mt-5 mb-3 p-4">
+                    <h1 style="color: red; font-weight:bolder;" class="text-center mt-3">Reciver</h1>
+
+
+        <form action="connect.php" method="post">
+            <label for="Name">Reciver Name</label>
+            <br>
+            <input class="form-control" type="text" name="Name">
+            <br> <br>
+
+            <label for="mobile">Reciver Mobile number</label>
+            <br>
+            <input class="form-control" type="text" name="mobile">
+            <br> <br>
+
+
+            <label for="email">Reciver Email</label>
+            <br>
+            <input class="form-control" type="email" name="email">
+            <br> <br>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Reciever Address</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+
+                </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="footerDiv">
+        <footer>
+            <div class="highFooter ms-5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS67bzbyAYKKDyzUSJy0y1RbGYmyyNQ2RhUfg&s" alt="">
+            </div>
+            <div class="lowerFooter ms-1">
+                <p>© 2024 Copyright </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

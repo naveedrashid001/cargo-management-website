@@ -4,28 +4,21 @@ const db = mongoose.connection;
 module.exports = {
     Delivery_Person: async (req, res) => {
         res.set({
-            "Allow-access-Allow-Origin": '*'
+            "Access-Control-Allow-Origin": '*'
         });
         return res.redirect('reciver.html');
     },
     Reciver: (req, res) => {
-        var name = req.body.name;
-        var age = req.body.age;
-        var email = req.body.email;
-        var mobile = req.body.mobile;
-        var gender = req.body.gender;
-        var password = req.body.password;
+        var { origin, destination, weight, date } = req.body;
 
         var data = {
-            "name": name,
-            "age": age,
-            "email": email,
-            "mobile": mobile,
-            "gender": gender,
-            "password": password
+            "origin": origin,
+            "destination": destination,
+            "weight": weight,
+            "date": date
         };
 
-        db.collection('users').insertOne(data, (err, collection) => {
+        db.collection('deliveries').insertOne(data, (err, collection) => {
             if (err) {
                 throw err;
             }

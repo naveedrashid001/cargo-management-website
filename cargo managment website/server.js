@@ -19,7 +19,7 @@ db.on("error", () => console.log("Error in connecting to database"));
 db.once("open", () => console.log("Successfully connected to database"));
 
 // Routes
-// app.use("/", mainRoute);
+app.use("/", mainRoute);
 
 // Start server
 app.listen(PORT, () => console.log(`Server is running at port no: ${PORT}`));
