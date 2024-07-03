@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Database connection
 mongoose.connect("mongodb://localhost:27017/cargo_website");
 
-
 var db = mongoose.connection;
 db.on("error", () => console.log("Error in connecting to database"));
 db.once("open", () => console.log("Successfully connected to database"));
