@@ -6,7 +6,7 @@ module.exports = {
         res.set({
             "Access-Control-Allow-Origin": '*'
         });
-        return res.redirect('reciver.html');
+        return res.redirect('index.html');
     },
     Reciver: (req, res) => {
         var { origin, destination, weight, date } = req.body;
@@ -24,7 +24,6 @@ module.exports = {
             }
             console.log("Record Inserted Successfully");
         });
-
-        return res.redirect('index.html');
+         return res.redirect('reciver.html');
     }
 };
